@@ -32,8 +32,12 @@ def get_connection():
     try:
         yield connection
         connection.commit()
-    except Exception:
-        connection.rollback()
-        raise
+    except sqlite3.Error as error:
+        if connection is not None:
+            connection.rollback()
+
+        raise DatabaseError(
+            f"Database operation failed: {error}"
+        ) from error
     finally:
         connection.close()
