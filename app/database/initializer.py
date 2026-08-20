@@ -1,5 +1,4 @@
-from app.database.connection import get_connection
-
+from app.database.connection import get_connection #DB connection
 
 def initialize_database():
     with get_connection() as connection:
