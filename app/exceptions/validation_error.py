@@ -1,2 +1,2 @@
 class ValidationError(Exception):
-    pass
+    pass #pass-means that the class does not have any additional functionality beyond what is provided by the base Exception class. It serves as a custom exception type that can be raised and caught in the application to indicate validation errors.
