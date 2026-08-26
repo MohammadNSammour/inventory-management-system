@@ -1,4 +1,4 @@
-# 🛒 Product Manager Pro - Advanced CLI System
+# 🛒 inventory-management-system
 
 > A production-grade, scalable Product Management CLI built with Python using Clean Architecture principles. Designed for maintainability, testability, and easy migration to modern stacks like PERN.
 ### 🎯 Overview
